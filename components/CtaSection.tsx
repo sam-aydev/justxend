@@ -50,10 +50,10 @@ export default function CTASection() {
             <motion.div
               animate={{ y: [0, -12, 0] }}
               transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-              className="absolute bottom-0 lg:right-54 w-[70%] z-20 transition-transform duration-500 hover:-translate-y-4 hover:rotate-[2deg]"
+              className="absolute bottom-20 left-8  lg:right-54 w-[50%] z-20 transition-transform duration-500 hover:-translate-y-4 hover:rotate-[2deg]"
             >
               <Image
-                src="/cta-phoneinterface.png" // Rename to your splash screen PNG
+                src="/cta-phoneinterface.png" 
                 alt="JustXend Splash Screen"
                 width={300}
                 height={600}
@@ -61,7 +61,7 @@ export default function CTASection() {
               />
             </motion.div>
 
-            <div className="absolute -top-32 md:-top-44 lg:-top-56 left-42 md:left-32 w-[70%] z-1000 transition-transform duration-500 hover:-translate-y-2 hover:rotate-[-2deg]">
+            <div className="absolute -top-32 md:-top-44 lg:-top-56 left-32 md:left-32 w-[50%] z-1000 transition-transform duration-500 hover:-translate-y-2 hover:rotate-[-2deg]">
               <Image
                 src="/iPhone.png" 
                 alt="JustXend App Interface"
@@ -78,7 +78,7 @@ export default function CTASection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={containerVariants}
-          className="w-full md:w-1/2 flex flex-col items-start text-left pt-12 md:pt-0"
+          className="w-full md:w-1/2 flex flex-col items-start text-left  md:pt-0"
         >
           <motion.h2 variants={itemVariants} className="text-[38px] leading-[1.1] md:text-[56px] md:leading-[1.05] font-extrabold text-white mb-4 md:mb-6 tracking-tight">
             Explore more <br />

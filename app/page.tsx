@@ -10,7 +10,7 @@ import HelpCenter from "@/components/HelpCenter";
 
 export default function Home() {
   return (
-    <main className="dark:bg-[#000000]  bg-[#EEF2FF] font-sans">
+    <main className="dark:bg-[#000000] overflow-hidden  bg-[#EEF2FF] font-sans">
       <NavBar />
 
       <Hero />
