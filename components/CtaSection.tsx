@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { AppStoreBadge, PlayStoreBadge } from "@/utils/svg/playstore";
 import { motion } from "motion/react";
+
 export default function CTASection() {
   const trustBadges = [
     {
@@ -19,7 +20,7 @@ export default function CTASection() {
     },
   ];
 
-  const containerVariants = {
+  const containerVariants: any  = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -27,7 +28,7 @@ export default function CTASection() {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: any = {
     hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
