@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* This tells Tailwind v4 to use the class strategy for dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Rest of your base styles */
+@layer base {
+  body {
+    @apply bg-white text-slate-900 transition-colors duration-500;
+  }
+  .dark body {
+    @apply bg-[#000B28] text-slate-50;
+  }
+}
+
+@theme {
+  /* Map the Next.js variable to a Tailwind utility class */
+  --font-inter: var(--font-inter);
+}
+
+@layer base {
+  body {
+    /* This makes Inter the default font for the entire site */
+    font-family: var(--font-inter), ui-sans-serif, system-ui;
+  }
+}
