@@ -109,7 +109,7 @@ export default function HowItWorks() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={rowVariants}
-          className="w-full flex flex-col md:flex-row items-center md:bg-[#DDE7FF] md:rounded-[50px] lg:rounded-[60px] relative z-10"
+          className="w-full lg:w-5/6 font-inter flex flex-col md:flex-row items-center md:bg-[#DDE7FF] md:rounded-[50px] lg:rounded-[60px] relative z-10"
         >
           <motion.div
             variants={imageBlockVariants}
@@ -145,7 +145,7 @@ export default function HowItWorks() {
               <div className="md:hidden shrink-0">
                 <Badge01 isMobile />
               </div>
-              <h3 className="text-[26px] sm:text-[28px] md:text-[44px] lg:text-[52px] font-extrabold text-[#1E3A8A] leading-[1.2] md:leading-[1.15] tracking-tight text-left md:text-center md:mb-6">
+              <h3 className="text-[26px] sm:text-[28px] md:text-[44px] font-inter font-extrabold text-[#1E3A8A] leading-[1.2] md:leading-[1.15] tracking-tight text-left md:text-center md:mb-6">
                 Fund Your JustXend <br className="hidden md:block lg:hidden" />{" "}
                 Wallet
               </h3>
@@ -153,7 +153,7 @@ export default function HowItWorks() {
             <p className="md:hidden text-[#64748B] text-[14px] text-center font-medium leading-relaxed mt-4 px-4">
               Seamless Funding with fast and secure transactions
             </p>
-            <p className="hidden md:block text-[#475569] text-[16px] lg:text-[17px] text-center font-medium leading-relaxed max-w-[90%] md:max-w-md mx-auto">
+            <p className="hidden md:block text-[#475569] text-[16px] text-center font-medium leading-relaxed max-w-[90%] md:max-w-md mx-auto">
               Add money to your Justxend wallet using your local bank or payment
               method. Your balance updates instantly, so you always know exactly
               how much you have available.
@@ -166,7 +166,7 @@ export default function HowItWorks() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={rowVariants}
-          className="w-full flex flex-col md:flex-row-reverse items-center md:bg-[#DDE7FF] md:rounded-[50px] lg:rounded-[60px] relative mt-20 md:mt-56 z-10"
+          className="w-full font-inter lg:w-5/6 lg:ml-56 flex flex-col md:flex-row-reverse items-center md:bg-[#DDE7FF] md:rounded-[50px] lg:rounded-[60px] relative mt-20 md:mt-56 z-10"
         >
           <motion.div
             variants={imageBlockVariants}
@@ -214,7 +214,7 @@ export default function HowItWorks() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={rowVariants}
-          className="w-full flex flex-col md:flex-row items-center md:bg-[#DDE7FF] md:rounded-[50px] lg:rounded-[60px] relative mt-20 md:mt-56 z-10"
+          className="w-full font-inter lg:w-5/6 flex flex-col md:flex-row items-center md:bg-[#DDE7FF] md:rounded-[50px] lg:rounded-[60px] relative mt-20 md:mt-56 z-10"
         >
           <motion.div
             variants={imageBlockVariants}
@@ -263,7 +263,7 @@ export default function HowItWorks() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={rowVariants}
-          className="w-full flex flex-col md:flex-row-reverse items-center md:bg-[#DDE7FF] md:rounded-[50px] lg:rounded-[60px] relative mt-20 md:mt-56 z-10"
+          className="w-full font-inter lg:w-5/6 lg:ml-56 flex flex-col md:flex-row-reverse items-center md:bg-[#DDE7FF] md:rounded-[50px] lg:rounded-[60px] relative mt-20 md:mt-56 z-10"
         >
           <motion.div
             variants={imageBlockVariants}

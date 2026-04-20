@@ -24,6 +24,7 @@ export default function Home() {
       <CTASection />
 
       <Footer />
+
       <HelpCenter />
     </main>
   );
