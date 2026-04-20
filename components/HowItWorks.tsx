@@ -130,7 +130,7 @@ export default function HowItWorks() {
             <motion.div
               animate={{ y: [0, -15, 0] }}
               transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-              className="hidden md:block absolute bottom-[15%] -right-[15%] z-30 w-[260px] lg:w-[320px]"
+              className="hidden md:block absolute bottom-[15%] left-10 xl:-right-[15%]  z-30 w-[260px] lg:w-[320px]"
             >
               <div className="w-full drop-shadow-xl">
                 <CardSection1 />
@@ -289,7 +289,7 @@ export default function HowItWorks() {
                 ease: "easeInOut",
                 delay: 0.5,
               }}
-              className="hidden md:block absolute bottom-[15%] -left-[10%] lg:-left-[15%] z-30 w-[260px] lg:w-[320px]"
+              className="hidden md:block absolute bottom-[15%] left-10 xl:-right-[6%]  lg:-left-[15%] z-30 w-[260px] lg:w-[320px]"
             >
               <div className="w-full drop-shadow-[0_20px_40px_rgba(0,0,0,0.12)]">
                 <CardSection4 />
