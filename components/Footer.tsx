@@ -5,6 +5,10 @@ import Link from "next/link";
 import { motion } from "motion/react";
 
 export default function Footer() {
+  const triggerHelpCenter = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.dispatchEvent(new Event("open-help-center"));
+  };
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -107,7 +111,13 @@ export default function Footer() {
                 Support
               </h4>
               <ul className="flex flex-col space-y-3 md:space-y-4">
-                <FooterLink href="#" text="Help center" />
+                <button
+                  onClick={triggerHelpCenter}
+                  className="flex items-center cursor-pointer gap-2 text-[#CBD5E1] hover:text-white transition-colors duration-300 group text-[13px] md:text-[14.5px]"
+                >
+                  <span className="w-[3px] h-[3px] rounded-full bg-white opacity-70 group-hover:opacity-100 transition-opacity"></span>
+                  Help Center
+                </button>
                 <FooterLink href="#" text="Privacy Policy" />
                 <FooterLink href="#" text="Terms of Services" />
               </ul>

@@ -46,7 +46,7 @@ export default function Hero() {
 
           <motion.p
             variants={textVariants}
-            className="text-[#94A3B8] text-base sm:text-lg lg:text-xl mb-8 lg:mb-12 max-w-md lg:max-w-lg leading-relaxed md:pr-6"
+            className="text-white text-base sm:text-lg lg:text-xl mb-8 lg:mb-12 max-w-md lg:max-w-lg leading-relaxed md:pr-6"
           >
             Experience the future of cross-border payments. Fast, secure, and
             affordable international transfers powered by blockchain technology.
