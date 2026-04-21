@@ -53,12 +53,12 @@ export default function HowItWorks() {
   return (
     <section
       id="excellence"
-      className="w-full dark:bg-[#000000] bg-[url('/wavy-bg.png')] dark:bg-[url('/dark_wavyborder.png')] bg-no-repeat bg-top pt-24 md:pt-40 pb-24 md:pb-36 relative overflow-hidden transition-colors duration-500 font-inter"
+      className="w-full  dark:bg-[#000000] bg-[url('/wavy-bg.png')] dark:bg-[url('/dark_wavyborder.png')] bg-cover bg-center bg-no-repeat pt-24 md:pt-40 pb-24 md:pb-36 relative overflow-hidden transition-colors duration-500 font-inter"
     >
       <div className="absolute top-[20%] left-[-10%] w-[500px] h-[500px] bg-blue-500/10 dark:bg-blue-600/10 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-[20%] right-[-10%] w-[600px] h-[600px] bg-indigo-500/10 dark:bg-indigo-600/10 blur-[150px] rounded-full pointer-events-none" />
 
-      <div className="max-w-[1200px] mx-auto px-6 md:px-10 relative z-10">
+      <div className="max-w-[1200px] mx-auto px-6 md:px-10 relative z-10 ">
         <motion.div
           initial="hidden"
           whileInView="visible"
