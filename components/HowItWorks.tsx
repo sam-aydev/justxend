@@ -9,17 +9,20 @@ export default function HowItWorks() {
   const features: any = [
     {
       title: "Zero Hidden Fees",
-      description: "Absolute transparency with every single transaction you make.",
+      description:
+        "Absolute transparency with every single transaction you make.",
       emoji: "💎",
     },
     {
       title: "Global Reach",
-      description: "Seamlessly connect with financial networks in over 150 countries.",
+      description:
+        "Seamlessly connect with financial networks in over 150 countries.",
       emoji: "🌍",
     },
     {
       title: "Always Online",
-      description: "Our infrastructure guarantees maximum uptime and reliability.",
+      description:
+        "Our infrastructure guarantees maximum uptime and reliability.",
       emoji: "⚡",
     },
   ];
@@ -58,7 +61,7 @@ export default function HowItWorks() {
       <div className="absolute top-[20%] left-[-10%] w-[500px] h-[500px] bg-blue-500/10 dark:bg-blue-600/10 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-[20%] right-[-10%] w-[600px] h-[600px] bg-indigo-500/10 dark:bg-indigo-600/10 blur-[150px] rounded-full pointer-events-none" />
 
-      <div className="max-w-[1200px] mx-auto px-6 md:px-10 relative z-10 ">
+      <div className="max-w-[1200px] mx-auto px-6 md:px-10 relative z-10 mt-28 md:mt-0">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -72,10 +75,15 @@ export default function HowItWorks() {
             </span>
           </div>
           <h2 className="text-[36px] md:text-[56px] font-extrabold text-[#0F172A] dark:text-white leading-[1.1] tracking-tight mb-6">
-            Engineered for <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500 dark:from-blue-400 dark:to-indigo-300">Excellence</span>
+            Engineered for{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500 dark:from-blue-400 dark:to-indigo-300">
+              Excellence
+            </span>
           </h2>
           <p className="text-[#64748B] dark:text-gray-400 text-base md:text-xl max-w-2xl font-medium leading-relaxed">
-            We don't just promise results. We deliver a financial infrastructure that is blindingly fast, unshakeably durable, intensely secure, and entirely focused on you.
+            We don't just promise results. We deliver a financial infrastructure
+            that is blindingly fast, unshakeably durable, intensely secure, and
+            entirely focused on you.
           </p>
         </motion.div>
 
@@ -87,27 +95,55 @@ export default function HowItWorks() {
             variants={staggerContainer}
             className="flex flex-col md:flex-row items-center gap-12 lg:gap-16 md:w-[85%] lg:w-[80%] md:mr-auto md:mb-32 relative z-10"
           >
-            <motion.div variants={imageFloat} className="w-full md:w-[45%] relative flex justify-center group">
+            <motion.div
+              variants={imageFloat}
+              className="w-full md:w-[45%] relative flex justify-center group"
+            >
               <div className="absolute inset-0 bg-blue-500/20 dark:bg-blue-500/10 blur-3xl rounded-full scale-75 group-hover:scale-100 transition-transform duration-700" />
               <div className="hidden md:block absolute -top-8 -left-8 z-30">
-                <FeatureIcon icon={<LightningIcon />} color="from-blue-400 to-indigo-600" />
+                <FeatureIcon
+                  icon={<LightningIcon />}
+                  color="from-blue-400 to-indigo-600"
+                />
               </div>
               <div className="relative z-20 w-full max-w-[260px] md:max-w-[300px] transition-transform duration-700 group-hover:-translate-y-4">
-                <Image src="/step1phone.png" alt="Speed Performance" width={400} height={800} className="w-full h-auto drop-shadow-2xl" />
+                <Image
+                  src="/step1phone.png"
+                  alt="Speed Performance"
+                  width={400}
+                  height={800}
+                  className="w-full h-auto drop-shadow-2xl"
+                />
               </div>
-              <motion.div animate={{ y: [0, -15, 0] }} transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }} className="hidden lg:block absolute -bottom-10 -right-20 z-30 w-[280px]">
+              <motion.div
+                animate={{ y: [0, -15, 0] }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 4,
+                  ease: "easeInOut",
+                }}
+                className="hidden lg:block absolute -bottom-10 -right-20 z-30 w-[280px]"
+              >
                 <CardSection1 />
               </motion.div>
             </motion.div>
-            <motion.div variants={fadeUp} className="w-full md:w-[55%] text-center md:text-left">
+            <motion.div
+              variants={fadeUp}
+              className="w-full md:w-[55%] text-center md:text-left"
+            >
               <div className="md:hidden flex justify-center mb-6">
-                <FeatureIcon icon={<LightningIcon />} color="from-blue-400 to-indigo-600" />
+                <FeatureIcon
+                  icon={<LightningIcon />}
+                  color="from-blue-400 to-indigo-600"
+                />
               </div>
               <h3 className="text-[28px] md:text-[40px] lg:text-[48px] font-extrabold text-[#1E3A8A] dark:text-white leading-tight mb-4 md:mb-6">
                 Lightning Fast Execution
               </h3>
               <p className="text-[#475569] dark:text-gray-400 text-base md:text-lg leading-relaxed max-w-md mx-auto md:mx-0">
-                Experience cross-border transfers that settle in seconds, not days. Our optimized routing engines guarantee your funds move at the speed of the modern world.
+                Experience cross-border transfers that settle in seconds, not
+                days. Our optimized routing engines guarantee your funds move at
+                the speed of the modern world.
               </p>
             </motion.div>
           </motion.div>
@@ -119,24 +155,44 @@ export default function HowItWorks() {
             variants={staggerContainer}
             className="flex flex-col md:flex-row-reverse items-center gap-12 lg:gap-16 md:w-[85%] lg:w-[80%] md:ml-auto md:mb-32 relative z-20"
           >
-            <motion.div variants={imageFloat} className="w-full md:w-[45%] relative flex justify-center group">
+            <motion.div
+              variants={imageFloat}
+              className="w-full md:w-[45%] relative flex justify-center group"
+            >
               <div className="absolute inset-0 bg-emerald-500/20 dark:bg-emerald-500/10 blur-3xl rounded-full scale-75 group-hover:scale-100 transition-transform duration-700" />
               <div className="hidden md:block absolute -top-8 -right-8 z-30">
-                <FeatureIcon icon={<ShieldIcon />} color="from-emerald-400 to-teal-600" />
+                <FeatureIcon
+                  icon={<ShieldIcon />}
+                  color="from-emerald-400 to-teal-600"
+                />
               </div>
               <div className="relative z-20 w-full max-w-[260px] md:max-w-[300px] transition-transform duration-700 group-hover:-translate-y-4">
-                <Image src="/step2phone.png" alt="Bank Grade Security" width={400} height={800} className="w-full h-auto drop-shadow-2xl" />
+                <Image
+                  src="/step2phone.png"
+                  alt="Bank Grade Security"
+                  width={400}
+                  height={800}
+                  className="w-full h-auto drop-shadow-2xl"
+                />
               </div>
             </motion.div>
-            <motion.div variants={fadeUp} className="w-full md:w-[55%] text-center md:text-left">
+            <motion.div
+              variants={fadeUp}
+              className="w-full md:w-[55%] text-center md:text-left"
+            >
               <div className="md:hidden flex justify-center mb-6">
-                <FeatureIcon icon={<ShieldIcon />} color="from-emerald-400 to-teal-600" />
+                <FeatureIcon
+                  icon={<ShieldIcon />}
+                  color="from-emerald-400 to-teal-600"
+                />
               </div>
               <h3 className="text-[28px] md:text-[40px] lg:text-[48px] font-extrabold text-[#1E3A8A] dark:text-white leading-tight mb-4 md:mb-6">
                 Fortified Security
               </h3>
               <p className="text-[#475569] dark:text-gray-400 text-base md:text-lg leading-relaxed max-w-md mx-auto md:mx-0">
-                Your assets are protected by military-grade encryption, biometric authentication, and continuous threat monitoring. Safety is permanently embedded in our foundation.
+                Your assets are protected by military-grade encryption,
+                biometric authentication, and continuous threat monitoring.
+                Safety is permanently embedded in our foundation.
               </p>
             </motion.div>
           </motion.div>
@@ -148,24 +204,44 @@ export default function HowItWorks() {
             variants={staggerContainer}
             className="flex flex-col md:flex-row items-center gap-12 lg:gap-16 md:w-[85%] lg:w-[80%] md:mr-auto md:mb-32 relative z-30"
           >
-            <motion.div variants={imageFloat} className="w-full md:w-[45%] relative flex justify-center group">
+            <motion.div
+              variants={imageFloat}
+              className="w-full md:w-[45%] relative flex justify-center group"
+            >
               <div className="absolute inset-0 bg-purple-500/20 dark:bg-purple-500/10 blur-3xl rounded-full scale-75 group-hover:scale-100 transition-transform duration-700" />
               <div className="hidden md:block absolute -top-8 -left-8 z-30">
-                <FeatureIcon icon={<ServerIcon />} color="from-purple-400 to-fuchsia-600" />
+                <FeatureIcon
+                  icon={<ServerIcon />}
+                  color="from-purple-400 to-fuchsia-600"
+                />
               </div>
               <div className="relative z-20 w-full max-w-[260px] md:max-w-[300px] transition-transform duration-700 group-hover:-translate-y-4">
-                <Image src="/step3phone.png" alt="Durable Architecture" width={400} height={800} className="w-full h-auto drop-shadow-2xl" />
+                <Image
+                  src="/step3phone.png"
+                  alt="Durable Architecture"
+                  width={400}
+                  height={800}
+                  className="w-full h-auto drop-shadow-2xl"
+                />
               </div>
             </motion.div>
-            <motion.div variants={fadeUp} className="w-full md:w-[55%] text-center md:text-left">
+            <motion.div
+              variants={fadeUp}
+              className="w-full md:w-[55%] text-center md:text-left"
+            >
               <div className="md:hidden flex justify-center mb-6">
-                <FeatureIcon icon={<ServerIcon />} color="from-purple-400 to-fuchsia-600" />
+                <FeatureIcon
+                  icon={<ServerIcon />}
+                  color="from-purple-400 to-fuchsia-600"
+                />
               </div>
               <h3 className="text-[28px] md:text-[40px] lg:text-[48px] font-extrabold text-[#1E3A8A] dark:text-white leading-tight mb-4 md:mb-6">
                 Uncompromising Durability
               </h3>
               <p className="text-[#475569] dark:text-gray-400 text-base md:text-lg leading-relaxed max-w-md mx-auto md:mx-0">
-                Built on resilient, distributed architecture ensuring 99.99% uptime. A system that scales effortlessly and stands strong, so you never miss a beat.
+                Built on resilient, distributed architecture ensuring 99.99%
+                uptime. A system that scales effortlessly and stands strong, so
+                you never miss a beat.
               </p>
             </motion.div>
           </motion.div>
@@ -177,27 +253,55 @@ export default function HowItWorks() {
             variants={staggerContainer}
             className="flex flex-col md:flex-row-reverse items-center gap-12 lg:gap-16 md:w-[85%] lg:w-[80%] md:ml-auto relative z-40"
           >
-            <motion.div variants={imageFloat} className="w-full md:w-[45%] relative flex justify-center group">
+            <motion.div
+              variants={imageFloat}
+              className="w-full md:w-[45%] relative flex justify-center group"
+            >
               <div className="absolute inset-0 bg-pink-500/20 dark:bg-pink-500/10 blur-3xl rounded-full scale-75 group-hover:scale-100 transition-transform duration-700" />
               <div className="hidden md:block absolute -top-8 -right-8 z-30">
-                <FeatureIcon icon={<HeartIcon />} color="from-pink-400 to-rose-600" />
+                <FeatureIcon
+                  icon={<HeartIcon />}
+                  color="from-pink-400 to-rose-600"
+                />
               </div>
               <div className="relative z-20 w-full max-w-[260px] md:max-w-[300px] transition-transform duration-700 group-hover:-translate-y-4">
-                <Image src="/step4phone.png" alt="Customer Centric" width={400} height={800} className="w-full h-auto drop-shadow-2xl" />
+                <Image
+                  src="/step4phone.png"
+                  alt="Customer Centric"
+                  width={400}
+                  height={800}
+                  className="w-full h-auto drop-shadow-2xl"
+                />
               </div>
-              <motion.div animate={{ y: [0, 15, 0] }} transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut" }} className="hidden lg:block absolute -bottom-10 -left-20 z-30 w-[280px]">
+              <motion.div
+                animate={{ y: [0, 15, 0] }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 4.5,
+                  ease: "easeInOut",
+                }}
+                className="hidden lg:block absolute -bottom-10 -left-20 z-30 w-[280px]"
+              >
                 <CardSection4 />
               </motion.div>
             </motion.div>
-            <motion.div variants={fadeUp} className="w-full md:w-[55%] text-center md:text-left">
+            <motion.div
+              variants={fadeUp}
+              className="w-full md:w-[55%] text-center md:text-left"
+            >
               <div className="md:hidden flex justify-center mb-6">
-                <FeatureIcon icon={<HeartIcon />} color="from-pink-400 to-rose-600" />
+                <FeatureIcon
+                  icon={<HeartIcon />}
+                  color="from-pink-400 to-rose-600"
+                />
               </div>
               <h3 className="text-[28px] md:text-[40px] lg:text-[48px] font-extrabold text-[#1E3A8A] dark:text-white leading-tight mb-4 md:mb-6">
                 The Ultimate Experience
               </h3>
               <p className="text-[#475569] dark:text-gray-400 text-base md:text-lg leading-relaxed max-w-md mx-auto md:mx-0">
-                Designed obsessively around your needs. Intuitive, frictionless, and completely transparent. It is simply the absolute best way to serve your global financial goals.
+                Designed obsessively around your needs. Intuitive, frictionless,
+                and completely transparent. It is simply the absolute best way
+                to serve your global financial goals.
               </p>
             </motion.div>
           </motion.div>
@@ -210,7 +314,11 @@ export default function HowItWorks() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.6, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
+              transition={{
+                duration: 0.6,
+                delay: index * 0.15,
+                ease: [0.16, 1, 0.3, 1],
+              }}
               whileHover={{ y: -8, scale: 1.02 }}
               className="w-full sm:w-[320px] md:flex-1 bg-white/50 dark:bg-[#111111]/80 backdrop-blur-xl rounded-[32px] p-8 flex flex-col items-center text-center transition-all duration-300 border border-gray-200/50 dark:border-white/5 shadow-lg hover:shadow-2xl dark:shadow-none"
             >
@@ -231,10 +339,20 @@ export default function HowItWorks() {
   );
 }
 
-const FeatureIcon = ({ icon, color }: { icon: React.ReactNode; color: string }) => (
+const FeatureIcon = ({
+  icon,
+  color,
+}: {
+  icon: React.ReactNode;
+  color: string;
+}) => (
   <div className="relative w-20 h-20 md:w-24 md:h-24 bg-[#000533] dark:bg-[#0A0A0A] rounded-3xl flex items-center justify-center shadow-2xl border border-white/10 rotate-3 hover:rotate-0 transition-transform duration-500">
-    <div className={`absolute inset-0 bg-gradient-to-br ${color} opacity-20 rounded-3xl blur-xl animate-pulse`} />
-    <div className={`absolute inset-[2px] bg-gradient-to-br ${color} opacity-10 rounded-3xl`} />
+    <div
+      className={`absolute inset-0 bg-gradient-to-br ${color} opacity-20 rounded-3xl blur-xl animate-pulse`}
+    />
+    <div
+      className={`absolute inset-[2px] bg-gradient-to-br ${color} opacity-10 rounded-3xl`}
+    />
     <div className="relative z-10 w-10 h-10 md:w-12 md:h-12 text-white">
       {icon}
     </div>
@@ -242,19 +360,40 @@ const FeatureIcon = ({ icon, color }: { icon: React.ReactNode; color: string }) 
 );
 
 const LightningIcon = () => (
-  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
   </svg>
 );
 
 const ShieldIcon = () => (
-  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
   </svg>
 );
 
 const ServerIcon = () => (
-  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
     <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
     <line x1="6" y1="6" x2="6.01" y2="6" />
@@ -263,39 +402,17 @@ const ServerIcon = () => (
 );
 
 const HeartIcon = () => (
-  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
   </svg>
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // "use client";
 
