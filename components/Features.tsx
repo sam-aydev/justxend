@@ -218,7 +218,7 @@ export default function Features() {
   };
 
   return (
-    <section className="w-full bg-[#EEF2FF] dark:bg-[#000000] pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden transition-colors duration-500">
+    <section className="w-full mx-auto bg-[#EEF2FF] dark:bg-[#000000] pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden transition-colors duration-500">
       <div className="max-w-[1400px] mx-auto px-0 md:px-10 lg:px-16">
         <motion.div
           initial="hidden"
@@ -252,7 +252,7 @@ export default function Features() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
             variants={containerVariants}
-            className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory px-6 md:px-0 pb-6 md:pb-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+            className="flex place-items-center md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory px-6 md:px-0 pb-6 md:pb-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
           >
             {features.map((feature) => (
               <motion.div
